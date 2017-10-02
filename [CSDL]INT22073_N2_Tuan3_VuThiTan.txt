@@ -1,0 +1,14 @@
+/*1*/SELECT *
+FROM employees
+WHERE reportsTo is NULL;
+/*2*/SELECT DISTINCT CustomerNumber
+FROM orders;
+/*3*/SELECT *
+FROM orders
+WHERE requiredDate = "2003/01/18";
+/*4*/SELECT *
+FROM orders
+WHERE MONTH(orderDate) = 4 and YEAR(orderDate) = 2005 and status="Shipped";
+/*5*/SELECT *
+FROM products
+WHERE productline = "Classic Cars";
